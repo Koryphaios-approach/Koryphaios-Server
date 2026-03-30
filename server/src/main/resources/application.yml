@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: koryphaios-server
+
+  graphql:
+    graphiql:
+      enabled: true
+      path: /graphiql
+    path: /graphql
+    schema:
+      locations: classpath*:schemas/
+    websocket:
+      path: /graphql
+
+logging:
+  level:
+    root: INFO
+    fr.obeo.ocp.koryphaios: DEBUG
